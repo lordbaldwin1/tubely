@@ -19,8 +19,8 @@ import (
 
 func getVideoAspectRatio(filePath string) (string, error) {
 	cmdPtr := exec.Command("ffprobe",
-		"-v error",
-		"-print_format json",
+		"-v", "error",
+		"-print_format", "json",
 		"-show_streams",
 		filePath,
 	)
