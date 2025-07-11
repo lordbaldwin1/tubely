@@ -24,7 +24,7 @@ func getVideoAspectRatio(filePath string) (string, error) {
 		"-show_streams",
 		filePath,
 	)
-
+	// test
 	var resBuffer bytes.Buffer
 	cmdPtr.Stdout = &resBuffer
 	err := cmdPtr.Run()
